@@ -1,10 +1,6 @@
 {
   "../QuickView/QuickView": [
     {
-      "id": "./components/MultiCarousel/MultiCarousel.tsx",
-      "file": "static/chunks/3.js"
-    },
-    {
       "id": "./components/Truncate/Truncate.tsx",
       "file": "static/chunks/3.js"
     },

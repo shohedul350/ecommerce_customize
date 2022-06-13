@@ -69,12 +69,12 @@ const QuickView: React.FunctionComponent<QuickViewProps> = ({
   };
   function onCategoryClick(slug) {
     Router.push({
-      pathname: `/${type.toLowerCase()}`,
+      pathname: `/${type?.toLowerCase()}`,
       query: { category: slug },
     }).then(() => window.scrollTo(0, 0));
     closeModal();
   }
-
+console.log(categories);
   return (
     <>
       <ModalClose onClick={onModalClose}>
@@ -82,7 +82,8 @@ const QuickView: React.FunctionComponent<QuickViewProps> = ({
       </ModalClose>
       <QuickViewWrapper>
         <ProductDetailsWrapper className='product-card' dir='ltr'>
-          {!isRtl && (
+          
+          {/* {!isRtl && (
             <ProductPreview>
               <CarouselWithCustomDots items={gallery} deviceType={deviceType} />
               {!!discountInPercent && (
@@ -91,7 +92,8 @@ const QuickView: React.FunctionComponent<QuickViewProps> = ({
                 </>
               )}
             </ProductPreview>
-          )}
+          )} */}
+
           <ProductInfoWrapper dir={isRtl ? 'rtl' : 'ltr'}>
             <ProductInfo>
               <ProductTitlePriceWrapper>
@@ -99,6 +101,7 @@ const QuickView: React.FunctionComponent<QuickViewProps> = ({
                 <ProductPriceWrapper>
                   {discountInPercent ? (
                     <SalePrice>
+      pathname: `/${type.toLowerCase()}`,
                       {CURRENCY}
                       {price}
                     </SalePrice>
@@ -145,7 +148,7 @@ const QuickView: React.FunctionComponent<QuickViewProps> = ({
               <ProductMeta>
                 <MetaSingle>
                   {categories
-                    ? categories.map((item: any) => (
+                    ? categories?.map((item: any) => (
                         <MetaItem
                           onClick={() => onCategoryClick(item.slug)}
                           key={item.id}
@@ -159,7 +162,7 @@ const QuickView: React.FunctionComponent<QuickViewProps> = ({
             </ProductInfo>
           </ProductInfoWrapper>
 
-          {isRtl && (
+          {/* {isRtl && (
             <ProductPreview>
               <CarouselWithCustomDots items={gallery} deviceType={deviceType} />
               {!!discountInPercent && (
@@ -168,7 +171,8 @@ const QuickView: React.FunctionComponent<QuickViewProps> = ({
                 </>
               )}
             </ProductPreview>
-          )}
+          )} */}
+
         </ProductDetailsWrapper>
       </QuickViewWrapper>
     </>

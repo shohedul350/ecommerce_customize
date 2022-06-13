@@ -47,7 +47,7 @@ const responsive = {
 };
 
 const CarouselWithCustomDots = ({
-  items = [],
+  items:any = [],
   deviceType: { mobile, tablet, desktop },
   title,
   ...rest
