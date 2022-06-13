@@ -59,14 +59,16 @@ export const TreeMenu: React.FC<Props> = ({
   onClick,
   active,
 }) => {
+
   const handler = (children) => {
-    return children.map((subOption) => {
+    console.log(children, '63')
+    return  children.map((subOption) => {
       if (!subOption.children) {
         return (
           <Tree
             key={subOption.title}
             name={subOption.title}
-            icon={subOption.icon}
+            // icon={subOption.icon}
             depth='child'
             onClick={() => onClick(subOption.slug)}
             isOpen={active === subOption.slug}
@@ -77,7 +79,7 @@ export const TreeMenu: React.FC<Props> = ({
         <Tree
           key={subOption.title}
           name={subOption.title}
-          icon={subOption.icon}
+          // icon={subOption.icon}
           depth='parent'
           onClick={() => onClick(subOption.slug)}
           isOpen={

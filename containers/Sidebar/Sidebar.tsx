@@ -46,9 +46,26 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({
   const { state, dispatch } = useContext(SearchContext);
   const router = useRouter();
   const { pathname, query } = router;
-  const { data, loading } = useQuery(GET_CATEGORIES, {
-    variables: { type },
-  });
+
+
+  // const { data, loading } = useQuery(GET_CATEGORIES, {
+  //   variables: { type },
+  // });
+const data = [
+  {
+      "id": '1',
+      "title": 'test',
+      "slug": 'test',
+      "icon": 'test',
+      "children": [{
+        "id": '1',
+        "title": 'c test',
+        "slug": "c test"
+      }]
+    }
+];
+const loading =false;
+
   const selectedQueries = query.category;
 
   const { isRtl } = useLocale();
@@ -64,14 +81,14 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({
   };
   const isSidebarSticky = useStickyState('isSidebarSticky');
 
-  if (!data || loading) {
-    if (mobile || tablet) {
-      return <SidebarMobileLoader />;
-    }
+  // if (!data || loading) {
+  //   if (mobile || tablet) {
+  //     return <SidebarMobileLoader />;
+  //   }
 
-    return <SidebarLoader />;
-  }
-
+  //   return <SidebarLoader />;
+  // }
+console.log(data)
   return (
     <CategoryWrapper>
       <PopoverWrapper>
@@ -98,7 +115,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({
                 </Link>
               )}
               <TreeMenu
-                data={data.categories}
+                data={data}
                 onClick={handleCategorySelection}
                 active={selectedQueries}
               />
@@ -135,7 +152,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({
           >
             <TreeWrapper>
               <TreeMenu
-                data={data.categories}
+                data={data}
                 onClick={handleCategorySelection}
                 active={selectedQueries}
               />
