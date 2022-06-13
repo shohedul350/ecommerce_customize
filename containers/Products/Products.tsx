@@ -92,6 +92,18 @@ export const Products: React.FC<ProductsProps> = ({
   //   },
   // });
 
+
+  // id,
+  // type,
+  // title,
+  // unit,
+  // price,
+  // discountInPercent,
+  // salePrice,
+  // description,
+  // gallery,
+  // categories,
+
 const data:any = {
   products: {
     items: [
@@ -99,16 +111,25 @@ const data:any = {
         "id": 1,
         "title": "Snackrite Cheese Onion",
         "slug": "sco",
-        "unit": 10,
+        "unit": '1 pice',
         "price": 10,
         "salePrice": 11,
         "description": 'Potato chips (often just chips), or crisps, are thin slices of potato that have been deep fried or baked until crunchy. They are commonly served as a snack, side dish, or appetizer. The basic chips are cooked and salted; additional varieties are manufactured using various flavorings and ingredients including herbs, spices, cheeses, other natural flavors, artificial flavors, and additives.',
-        "discountInPercent": 0,
-        "type": 0,
+        "discountInPercent": 5,
+        "type": 'Test',
         "image": 'https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75',
-        "gallery": {
-          "url": ['https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75'],
-        },
+        "gallery": [
+          {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           }
+  ],
+        
         "categories": [{
           "id":0,
           "title": "snacks",
@@ -130,11 +151,19 @@ const data:any = {
         "salePrice": 11,
         "description": 'Potato chips (often just chips), or crisps, are thin slices of potato that have been deep fried or baked until crunchy. They are commonly served as a snack, side dish, or appetizer. The basic chips are cooked and salted; additional varieties are manufactured using various flavorings and ingredients including herbs, spices, cheeses, other natural flavors, artificial flavors, and additives.',
         "discountInPercent": 0,
-        "type": 0,
+        "type": 'Test',
         "image": 'https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F222%2FReady-Salted-Crisps.jpg&w=1080&q=75',
-        "gallery": {
-          "url": 'https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F222%2FReady-Salted-Crisps.jpg&w=1080&q=75',
-        },
+        "gallery": [
+          {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           }
+  ],
         "categories": [{
           "id":0,
           "title": "snacks",
@@ -157,11 +186,19 @@ const data:any = {
         "salePrice": 11,
         "description": 'Chocolate is a usually sweet, brown food preparation of roasted and ground cacao seeds that is made in the form of a liquid, paste, or in a block, or used as a flavoring ingredient in other foods.',
         "discountInPercent": 0,
-        "type": 0,
+        "type": 'Test',
         "image": 'https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F213%2Fsnikers_snacksize.jpg&w=1080&q=75',
-        "gallery": {
-          "url": ['https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F213%2Fsnikers_snacksize.jpg&w=1080&q=75'],
-        },
+        "gallery": [
+          {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           }
+  ],
         "categories": [{
           "id":0,
           "title": "snacks",
@@ -188,11 +225,19 @@ const data:any = {
         "salePrice": 11,
         "description": 'Spinach (Spinacia oleracea) is a leafy green flowering plant native to central and western Asia. It is of the order Caryophyllales, family Amaranthaceae, subfamily Chenopodioideae. Its leaves are a common edible vegetable consumed either fresh.',
         "discountInPercent": 10,
-        "type": 0,
+        "type": 'Test',
         "image": 'https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75',
-        "gallery": {
-          "url": ['https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75'],
-        },
+        "gallery": [
+          {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           }
+  ],
         "categories": [{
           "id":0,
           "title": "fruits & vegetables",
@@ -218,11 +263,19 @@ const data:any = {
         "salePrice": 11,
         "description": 'Maize, also known as corn, is a cereal grain first domesticated by indigenous peoples in southern Mexico about 10,000 years ago. The leafy stalk of the plant produces pollen inflorescences and separate ovuliferous inflorescences called ears that yield kernels or seeds, which are fruits.',
         "discountInPercent": 0,
-        "type": 0,
+        "type": 'Test',
         "image": 'https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F592%2FSweet-Corn-1.png&w=640&q=75',
-        "gallery": {
-          "url": ['https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F592%2FSweet-Corn-1.png&w=640&q=75'],
-        },
+        "gallery": [
+          {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           }
+  ],
         "categories": [{
           "id":0,
           "title": "fruits & vegetables",
@@ -244,11 +297,19 @@ const data:any = {
         "salePrice": 9,
         "description": 'Green capsicums are picked when ripe and have an all-over green appearance.A fresh, crisp green capsicum is a tasty vegetable that can be a regular part of your healthy eating plan. This vegetable is low in calories and contains 0 grams of fat and a good supply vitamins and minerals. Their mildly sweet flavor makes green bell peppers versatile enough to include a wide variety of nutritious recipes.',
         "discountInPercent": 10,
-        "type": 0,
+        "type": 'Test',
         "image": 'https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F1005%2FMarrow5.jpg&w=1080&q=75',
-        "gallery": {
-          "url": ['https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F1005%2FMarrow5.jpg&w=1080&q=75'],
-        },
+        "gallery": [
+          {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           },
+           {
+            "url": "https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75",
+           }
+  ],
         "categories": [{
           "id":0,
           "title": "marrow",

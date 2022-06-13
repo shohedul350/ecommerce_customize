@@ -69,12 +69,12 @@ const QuickView: React.FunctionComponent<QuickViewProps> = ({
   };
   function onCategoryClick(slug) {
     Router.push({
-      pathname: `/${type?.toLowerCase()}`,
+      pathname: `/${type.toLowerCase()}`,
       query: { category: slug },
     }).then(() => window.scrollTo(0, 0));
     closeModal();
   }
-console.log(categories);
+
   return (
     <>
       <ModalClose onClick={onModalClose}>
@@ -82,8 +82,7 @@ console.log(categories);
       </ModalClose>
       <QuickViewWrapper>
         <ProductDetailsWrapper className='product-card' dir='ltr'>
-          
-          {/* {!isRtl && (
+          {!isRtl && (
             <ProductPreview>
               <CarouselWithCustomDots items={gallery} deviceType={deviceType} />
               {!!discountInPercent && (
@@ -92,8 +91,7 @@ console.log(categories);
                 </>
               )}
             </ProductPreview>
-          )} */}
-
+          )}
           <ProductInfoWrapper dir={isRtl ? 'rtl' : 'ltr'}>
             <ProductInfo>
               <ProductTitlePriceWrapper>
@@ -101,7 +99,6 @@ console.log(categories);
                 <ProductPriceWrapper>
                   {discountInPercent ? (
                     <SalePrice>
-      pathname: `/${type.toLowerCase()}`,
                       {CURRENCY}
                       {price}
                     </SalePrice>
@@ -148,7 +145,7 @@ console.log(categories);
               <ProductMeta>
                 <MetaSingle>
                   {categories
-                    ? categories?.map((item: any) => (
+                    ? categories.map((item: any) => (
                         <MetaItem
                           onClick={() => onCategoryClick(item.slug)}
                           key={item.id}
@@ -162,7 +159,7 @@ console.log(categories);
             </ProductInfo>
           </ProductInfoWrapper>
 
-          {/* {isRtl && (
+          {isRtl && (
             <ProductPreview>
               <CarouselWithCustomDots items={gallery} deviceType={deviceType} />
               {!!discountInPercent && (
@@ -171,8 +168,7 @@ console.log(categories);
                 </>
               )}
             </ProductPreview>
-          )} */}
-
+          )}
         </ProductDetailsWrapper>
       </QuickViewWrapper>
     </>
