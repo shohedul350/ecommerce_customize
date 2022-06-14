@@ -18,39 +18,39 @@ import Placeholder from 'components/Placeholder/Placeholder';
 import Fade from 'react-reveal/Fade';
 import NoResultFound from 'components/NoResult/NoResult';
 
-const GET_PRODUCTS = gql`
-  query getProducts(
-    $type: String
-    $text: String
-    $category: String
-    $offset: Int
-    $limit: Int
-  ) {
-    products(
-      type: $type
-      text: $text
-      category: $category
-      offset: $offset
-      limit: $limit
-    ) {
-      items {
-        id
-        title
-        slug
-        price
-        salePrice
-        discountInPercent
-        type
-        image
-        author {
-          id
-          name
-        }
-      }
-      hasMore
-    }
-  }
-`;
+// const GET_PRODUCTS = gql`
+//   query getProducts(
+//     $type: String
+//     $text: String
+//     $category: String
+//     $offset: Int
+//     $limit: Int
+//   ) {
+//     products(
+//       type: $type
+//       text: $text
+//       category: $category
+//       offset: $offset
+//       limit: $limit
+//     ) {
+//       items {
+//         id
+//         title
+//         slug
+//         price
+//         salePrice
+//         discountInPercent
+//         type
+//         image
+//         author {
+//           id
+//           name
+//         }
+//       }
+//       hasMore
+//     }
+//   }
+// `;
 
 type ProductsProps = {
   deviceType?: {
@@ -70,15 +70,42 @@ export const Products: React.FC<ProductsProps> = ({
 }) => {
   const router = useRouter();
   const [loadingMore, toggleLoading] = useState(false);
-  const { data, error, loading, fetchMore } = useQuery(GET_PRODUCTS, {
-    variables: {
-      type: type,
-      text: router.query.text,
-      category: router.query.category,
-      offset: 0,
-      limit: fetchLimit,
-    },
-  });
+  // const { data, error, loading, fetchMore } = useQuery(GET_PRODUCTS, {
+  //   variables: {
+  //     type: type,
+  //     text: router.query.text,
+  //     category: router.query.category,
+  //     offset: 0,
+  //     limit: fetchLimit,
+  //   },
+  // });
+
+  const error: any = false
+  const loading = false;
+  const fetchMore:any = (data:any)=>{
+    console.log('hi');
+  }
+
+  const data: any = {
+    products: {
+      items: [
+        {
+        "id": 1,
+        "title": "Superhero & Aliens",
+        "slug": 0,
+        "price": 10,
+        "salePrice": 100,
+        "discountInPercent": 0,
+        "type": 'Paperback Book',
+        "image": 'https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F1669%2FComic-Books-7.jpg&w=640&q=75',
+        "author": {
+          "id": 1,
+          "name": 'Brandon T. Trigg',
+          }
+        }
+      ]
+    }
+  }
 
   if (loading) {
     return (
