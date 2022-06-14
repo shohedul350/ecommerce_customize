@@ -54,13 +54,220 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({
 const data = [
   {
       "id": '1',
-      "title": 'test',
+      "title": 'Fruits & Vegetables',
       "slug": 'test',
       "icon": 'test',
       "children": [{
         "id": '1',
-        "title": 'c test',
-        "slug": "c test"
+        "title": 'Fruits',
+        "slug": "Fruits"
+      },{
+        "id": '2',
+        "title": 'Vegetables',
+        "slug": "Vegetables"
+      }
+    ]
+    },{
+      "id": '2',
+      "title": 'Meat & Fish',
+      "slug": 'test',
+      "icon": 'test',
+      "children": [{
+        "id": '1',
+        "title": 'Meat',
+        "slug": "Meat"
+      },{
+        "id": '2',
+        "title": 'Fish',
+        "slug": "Fish"
+      }]
+    },{
+      "id": '3',
+      "title": 'Snacks',
+      "slug": 'Snacks',
+      "icon": 'test',
+      "children": [{
+        "id": '1',
+        "title": 'Nuts & Biscuits',
+        "slug": "Nuts & Biscuits"
+      },{
+        "id": '2',
+        "title": 'Chocolates',
+        "slug": "Chocolates"
+      },{
+        "id": '3',
+        "title": 'Crisps',
+        "slug": "Crisps"
+      },{
+        "id": '4',
+        "title": 'Noodles & Pasta',
+        "slug": "Noodles & Pasta"
+      },{
+        "id": '5',
+        "title": 'Sauce',
+        "slug": "Sauce"
+      },{
+        "id": '6',
+        "title": 'Soup',
+        "slug": "Soup"
+      }]
+    },{
+      "id": '4',
+      "title": 'Pet Care',
+      "slug": 'Pet Care',
+      "icon": 'test',
+      "children": [{
+        "id": '1',
+        "title": 'Cat Food',
+        "slug": "Cat Food"
+      },{
+        "id": '2',
+        "title": 'Dog Food',
+        "slug": "Dog Food"
+      },{
+        "id": '3',
+        "title": 'Accessories',
+        "slug": "Accessories"
+      }]
+    },{
+      "id": '5',
+      "title": 'Home & Cleaning',
+      "slug": 'Home & Cleaning',
+      "icon": 'test',
+      "children": [{
+        "id": '1',
+        "title": 'Air Freshner',
+        "slug": "Air Freshner"
+      },{
+        "id": '2',
+        "title": 'Cleaning Products',
+        "slug": "Cleaning Products"
+      },{
+        "id": '3',
+        "title": 'Kitchen Accessories',
+        "slug": "Kitchen Accessories"
+      },{
+        "id": '4',
+        "title": 'Laundry',
+        "slug": "Laundry"
+      }]
+    },{
+      "id": '6',
+      "title": 'Dairy',
+      "slug": 'Dairy',
+      "icon": 'Dairy',
+      "children": [{
+        "id": '1',
+        "title": 'Milk',
+        "slug": "Milk"
+      },{
+        "id": '2',
+        "title": 'Butter',
+        "slug": "Butter"
+      },{
+        "id": '3',
+        "title": 'Egg',
+        "slug": "Egg"
+      },{
+        "id": '4',
+        "title": 'Yogurt',
+        "slug": "Yogurt"
+      }]
+    },{
+      "id": '7',
+      "title": 'Cooking',
+      "slug": 'Cooking',
+      "icon": 'test',
+      "children": [{
+        "id": '1',
+        "title": 'Oil',
+        "slug": "Oil"
+      },{
+        "id": '2',
+        "title": 'Rice',
+        "slug": "Rice"
+      },{
+        "id": '3',
+        "title": 'Salt & Sugar',
+        "slug": "Salt & Sugar"
+      },{
+        "id": '4',
+        "title": 'Spices',
+        "slug": "Spices"
+      }]
+    },{
+      "id": '8',
+      "title": 'Breakfast',
+      "slug": 'Breakfast',
+      "icon": 'test',
+      "children": [{
+        "id": '1',
+        "title": 'Bread',
+        "slug": "Bread"
+      },{
+        "id": '2',
+        "title": 'Cereal',
+        "slug": "Cereal"
+      },{
+        "id": '3',
+        "title": 'Jam',
+        "slug": "Jam"
+      }]
+    },{
+      "id": '9',
+      "title": 'Beverage',
+      "slug": 'Beverage',
+      "icon": 'test',
+      "children": [{
+        "id": '1',
+        "title": 'Coffee',
+        "slug": "Coffee"
+      },{
+        "id": '2',
+        "title": 'Energy Drinks',
+        "slug": "Energy Drinks"
+      },{
+        "id": '3',
+        "title": 'Juice',
+        "slug": "Juice"
+      },{
+        "id": '4',
+        "title": 'Fizzy Drinks',
+        "slug": "Fizzy Drinks"
+      },{
+        "id": '5',
+        "title": 'tea',
+        "slug": "tea"
+      }]
+    },{
+      "id": '10',
+      "title": 'Health & Beauty',
+      "slug": 'Health & Beauty',
+      "icon": 'test',
+      "children": [{
+        "id": '1',
+        "title": 'Bath',
+        "slug": "Bath"
+      },{
+        "id": '2',
+        "title": 'Cream',
+        "slug": "Cream"
+      },{
+        "id": '3',
+        "title": 'Drodoran',
+        "slug": "Drodoran"
+      },{
+        "id": '4',
+        "title": 'Face Care',
+        "slug": "Face Care"
+      },{
+        "id": '5',
+        "title": 'Oral Care',
+        "slug": "Oral Care"
+      },{
+        "id": '6',
+        "title": 'Shaving Needs',
+        "slug": "Shaving Needs"
       }]
     }
 ];
