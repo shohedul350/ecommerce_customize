@@ -1,5 +1,5 @@
 export const initialState = {
-  isSticky: false,
+  isSticky: true,
   isSidebarSticky: true,
 };
 

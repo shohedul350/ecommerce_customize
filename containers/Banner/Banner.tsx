@@ -62,20 +62,16 @@ const Banner: React.FC<BannerProps> = ({
     () => useDispatch({ type: 'REMOVE_STICKY' }),
     [useDispatch]
   );
-
-  const onWaypointPositionChange = ({ currentPosition }) => {
-    if (!currentPosition || currentPosition === 'above') {
-      setSticky();
-    }
-  };
+  setSticky();
+  // const onWaypointPositionChange = ({ currentPosition }) => {
+  //   if (!currentPosition || currentPosition === 'above') {
+  //     setSticky();
+  //   }
+  // };
 
   return (
-    <BannerWrapper
-      style={{
-        backgroundImage: `url(${imageUrl})`,
-      }}
-    >
-      <BannerComponent>
+    <BannerWrapper>
+      {/* <BannerComponent>
         <BannerHeading>
           <FormattedMessage
             id={intlTitleId}
@@ -102,13 +98,13 @@ const Banner: React.FC<BannerProps> = ({
           onClick={handleClickSearchButton}
           className='banner-search'
           pathname={pathname}
-        />
-        <Waypoint
+        /> */}
+        {/* <Waypoint
           onEnter={removeSticky}
           onLeave={setSticky}
           onPositionChange={onWaypointPositionChange}
-        />
-      </BannerComponent>
+        /> */}
+      {/* </BannerComponent> */}
     </BannerWrapper>
   );
 };
