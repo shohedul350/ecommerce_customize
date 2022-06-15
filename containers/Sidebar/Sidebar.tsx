@@ -70,7 +70,7 @@ const data = [
     },{
       "id": '2',
       "title": 'Meat & Fish',
-      "slug": 'test',
+      "slug": 'meat_&_fish',
       "icon": 'test',
       "children": [{
         "id": '1',

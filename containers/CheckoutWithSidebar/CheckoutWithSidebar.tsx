@@ -134,7 +134,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({ token, deviceType }) => {
     if (
       calculatePrice() > 0 &&
       cartItemsCount > 0 &&
-      address.length &&
+      address &&
       contact.length &&
       card.length &&
       schedules.length
