@@ -123,12 +123,14 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({ token, deviceType }) => {
 
   const handleSubmit = async () => {
     setLoading(true);
-    if (isValid) {
+    if (!isValid) { // using ! 
       clearCart();
       Router.push('/order-received');
     }
     setLoading(false);
   };
+  
+  console.log('cartItemsCount:',cartItemsCount,", address:",address,", contact:",contact,', schedules:',schedules , 'text info' )
 
   useEffect(() => {
     if (
@@ -455,7 +457,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({ token, deviceType }) => {
                 <Button
                   onClick={handleSubmit}
                   type='button'
-                  disabled={!isValid}
+                  // disabled={!isValid} comment buttton disabled
                   title='Proceed to Checkout'
                   intlButtonId='proceesCheckout'
                   loader={<Loader />}
