@@ -39,11 +39,11 @@ function HomePage({ deviceType }) {
     <>
       <SEO title='Medicine - PickBazar' description='Medicine Details' />
       <Modal>
-        <Banner
+        {/* <Banner
           intlTitleId='medicineTitle'
           intlDescriptionId='medicineSubTitle'
           imageUrl={BannerImg}
-        />
+        /> */}
 
         {deviceType.desktop ? (
           <>

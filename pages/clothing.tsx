@@ -39,11 +39,11 @@ function WomenClothsPage({ deviceType }) {
     <>
       <SEO title='Clothing - PickBazar' description='Clothing Details' />
       <Modal>
-        <Banner
+        {/* <Banner
           intlTitleId='womenClothsTitle'
           intlDescriptionId='womenClothsSubTitle'
           imageUrl={BannerImg}
-        />
+        /> */}
 
         {deviceType.desktop ? (
           <>
