@@ -57,14 +57,15 @@ const OrderRecived: React.FunctionComponent<OrderRecivedProps> = props => {
               <Text bold className="title">
                 <FormattedMessage id="orderDateText" defaultMessage="Date" />
               </Text>
-              <Text>March 14, 2019</Text>
+              {/* <Text>March 14, 2019</Text> */}
+              <Text>{new Date().toDateString()}</Text>
             </InfoBlock>
 
             <InfoBlock>
               <Text bold className="title">
                 <FormattedMessage id="totalText" defaultMessage="Total" />
               </Text>
-              <Text>$10,944.00</Text>
+              <Text>$11.00</Text>
             </InfoBlock>
 
             <InfoBlock>
@@ -102,7 +103,7 @@ const OrderRecived: React.FunctionComponent<OrderRecivedProps> = props => {
               </Text>
             </ListTitle>
             <ListDes>
-              <Text>6 Items</Text>
+              <Text>1 Items</Text>
             </ListDes>
           </ListItem>
 
@@ -116,7 +117,7 @@ const OrderRecived: React.FunctionComponent<OrderRecivedProps> = props => {
               </Text>
             </ListTitle>
             <ListDes>
-              <Text>1.00pm 10/12/19</Text>
+              <Text>{new Date().toDateString()}</Text>
             </ListDes>
           </ListItem>
 
@@ -166,7 +167,7 @@ const OrderRecived: React.FunctionComponent<OrderRecivedProps> = props => {
               </Text>
             </ListTitle>
             <ListDes>
-              <Text>$10,864.00</Text>
+              <Text>$11.00</Text>
             </ListDes>
           </ListItem>
 
@@ -194,7 +195,7 @@ const OrderRecived: React.FunctionComponent<OrderRecivedProps> = props => {
               </Text>
             </ListTitle>
             <ListDes>
-              <Text>10</Text>
+              <Text>11</Text>
             </ListDes>
           </ListItem>
 
@@ -205,7 +206,7 @@ const OrderRecived: React.FunctionComponent<OrderRecivedProps> = props => {
               </Text>
             </ListTitle>
             <ListDes>
-              <Text>$10,874.00</Text>
+              <Text>$11.00</Text>
             </ListDes>
           </ListItem>
         </TotalAmount>
