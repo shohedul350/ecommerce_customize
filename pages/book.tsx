@@ -40,27 +40,27 @@ function HomePage({ deviceType }) {
     <>
       <SEO title='Book - PickBazar' description='Book Details' />
       <Modal>
-        <Banner
+        {/* <Banner
           intlTitleId='booksTitle'
           intlDescriptionId='booksSubTitle'
           imageUrl={BannerImg}
-        />
+        /> */}
 
         {deviceType.desktop ? (
           <>
-            <MobileCarouselDropdown>
+            {/* <MobileCarouselDropdown>
               <StoreNav items={storeType} />
               <Sidebar type={PAGE_TYPE} deviceType={deviceType} />
-            </MobileCarouselDropdown>
+             </MobileCarouselDropdown> */}
             <OfferSection>
-              <div style={{ margin: '0 -10px' }}>
+              <div style={{ margin: '80px -10px 0' }}>
                 <Carousel deviceType={deviceType} data={OFFERS} />
               </div>
             </OfferSection>
             <MainContentArea>
-              <SidebarSection>
+              {/* <SidebarSection>
                 <Sidebar type={PAGE_TYPE} deviceType={deviceType} />
-              </SidebarSection>
+              </SidebarSection> */}
               <ContentSection>
                 <div ref={targetRef}>
                   <Products

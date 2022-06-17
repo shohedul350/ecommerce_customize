@@ -119,28 +119,29 @@ const OrdersContent: React.FC<OrderTableProps> = ({
 
   const data:any = {
     "orders":[
-    {
-      'id':1,
-      'status': true,
-      'deliveryAddress':'Dhaka, bangladesh',
-      'amount': 11,
-      'date':  'Jun 17 2022',
-      'subtotal': 11,
-      'deliveryFee': 0,
-      'discount': 0,
-      'deliveryTime': 'Jun 20 2022',
-    //   'products': {
-    //     'title': 'item1',
-    //     'price': 11,
-    //     'total': 11,
-    //     'image': 'https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75',
-    //     'weight': '1.5 kg',
-    //     'quantity': 1,
-    //     'id': 1,
-    //   }
-    },
+      {
+        'id':1,
+        'status': true,
+        'deliveryAddress':'Dhaka, bangladesh',
+        'amount': 11,
+        'date':  'Jun 17 2022',
+        'subtotal': 11,
+        'deliveryFee': 0,
+        'discount': 0,
+        'deliveryTime': 'Jun 20 2022',
+      //   'products': {
+      //     'title': 'item1',
+      //     'price': 11,
+      //     'total': 11,
+      //     'image': 'https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F224%2Fsnackrite_bags.jpg&w=1080&q=75',
+      //     'weight': '1.5 kg',
+      //     'quantity': 1,
+      //     'id': 1,
+      //   }
+      },
     ]
   };
+  
   const error:boolean = false;
   const loading:boolean = false;
 
